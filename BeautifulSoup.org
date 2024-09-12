@@ -64,6 +64,8 @@ soup.find_all(attrs={"class" : "name_of_class"})
 
 #  SELECT method - CSS selector
 #  Note that the elements extracted by the SELECT method are in the form of list, pay attention to add inDex when getting text
+
+#+BEGIN_SRC python
 soup.select('p') #  Find all P elements according to the label name, equal to Soup.Find_all ('P')
 soup.select('.sister') #  Find labels for class = sister through CSS properties
 soup.select('#link1') #  Find all ID = # link1 elements by id = # link1
@@ -73,6 +75,7 @@ soup.select('a[class="sister"]') #  Find all attributes a tag for Sister
 soup.select('a[href="http://example.com/elsie"]') #Find href = xxx A tag elements
 soup.select('p')[0].get_text() #  Get the text of the first P element
 soup.select('a[href*=".com/el"]')[0].attrs['href'] #Get xxx.com HREF
+#+END_SRC
 
 https://www.programmerall.com/article/63351096826/
 
