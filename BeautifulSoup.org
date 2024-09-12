@@ -1,3 +1,30 @@
+
+** Basic Pattern
+
+
+#+BEGIN_SRC python
+
+    import re
+    import time
+    import requests
+    from bs4 import BeautifulSoup
+    
+    url = "https://www.hud.gov/program_offices/housing/rmra/oe/rpts/hecmsfsnap/hecmsfsnap"
+    
+    response = requests.get(url)
+    html = response.text
+    
+    base_url = "https://www.hud.gov"
+    
+    soup = BeautifulSoup(html)
+    links = soup.find_all("a", string=re.compile("Excel"))
+
+#+END_SRC
+
+
+
+
+
 ** title
 
 soup.title # <title>The Dormouse's story</title>
