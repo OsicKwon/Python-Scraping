@@ -91,8 +91,8 @@ soup.find_all(attrs={"class" : "name_of_class"})
 
 ** select vs find(find_all)
 
-- result: Beautifulsoup = soup.find( ~
-- result: List[str] = soup.select( ~
+- result :: Beautifulsoup = soup.find( ...
+- result :: *List[str]* = soup. /select/ ( ...
 
 #  SELECT method - CSS selector
 #  Note that the elements extracted by the SELECT method are in the form of list, pay attention to add inDex when getting text
