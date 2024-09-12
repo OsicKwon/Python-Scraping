@@ -22,9 +22,9 @@ soup.a # <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
 
 ** find
 
-#+BEGIN_HTML
->> <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
-#+END_HTML
+#+BEGIN_SRC HTML
+<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+#+END_SRC
 
 #+BEGIN_SRC python
 soup.find(id="link3") 
