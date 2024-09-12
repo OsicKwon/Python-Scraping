@@ -1,5 +1,1 @@
-#+begin_src plantuml 
-skinparam monochrome true
- Foo -> Bar: synchronous call
- Foo ->> Bar: asynchronous call
-#+end_src
+#+INCLUDE: "./sitemap_xml.org" :minlevel 1
